@@ -1,0 +1,5 @@
+{% for image in site %}
+    {% if image.path contains 'images/' %}
+        <img src="{{ site.baseurl }}{{ image.path }}" alt="" />
+    {% endif %}
+{% endfor %}
